@@ -84,3 +84,11 @@ React exercise - extendable for Redux
 ## Part 2
 
 1. Add redux
+
+## Part 3
+
+1. Add react router
+1. Create 3 pages
+    - Home Page to list
+    - Booklist view
+    - New Book form view
