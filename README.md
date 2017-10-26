@@ -88,10 +88,11 @@ React exercise - extendable for Redux
 ## Part 3
 
 1. Add react router
-1. Create 3 pages
+1. Create 3 pages a user can browse through
     - Home page
         - A view to list all the books
     - Single book view
         - A view that displays a single book
     - New Book form view
         - A view rendering the form to add a new book
+1. Create a new book component to view a single book
