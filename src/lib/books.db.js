@@ -28,5 +28,9 @@ export const addBookToFakeXHR = (book) => new Promise((resolve, reject) => {
 });
 
 export const getBookByIdFromFakeXHR = (bookId) => new Promise((resolve, reject) => {
-  setTimeout(() => resolve(booksFromFakeDB.find(book => book._id === bookId)), 500);
+  setTimeout(() => {
+    const bookResponse = booksFromFakeDB.find(book => book._id === bookId);
+    if (bookResponse) resolve(bookResponse);
+    else reject({status: 404, message: 'Book Not Found'});
+  }, 500);
 });
