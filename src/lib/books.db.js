@@ -26,3 +26,7 @@ export const addBookToFakeXHR = (book) => new Promise((resolve, reject) => {
     resolve(booksFromFakeDB);
   }, 500);
 });
+
+export const getBookByIdFromFakeXHR = (bookId) => new Promise((resolve, reject) => {
+  setTimeout(() => resolve(booksFromFakeDB.find(book => book._id === bookId)), 500);
+});
