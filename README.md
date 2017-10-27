@@ -91,8 +91,9 @@ React exercise - extendable for Redux
 1. Create 3 pages a user can browse through
     - Home page
         - A view to list all the books
+        - Clicking on a `BookListItem` should redirect to a Single Book View
     - Single book view
-        - A view that displays a single book
-    - New Book form view
+        - A view that displays a single book and its contents
+    - New Book Form view
         - A view rendering the form to add a new book
 1. Create a new book component to view a single book
