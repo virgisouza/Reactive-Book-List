@@ -63,7 +63,7 @@ React exercise - extendable for Redux
 │   └── index.html
 └── src
     ├── components
-    │   ├── Book.js
+    │   ├── BookListItem.js
     │   ├── BookFilterInput.js
     │   └── BookListAppTitle.js
     ├── containers
