@@ -9,13 +9,29 @@ class NewBookForm extends Component {
     }
   }
 
+  handleSubmit(event){
+
+  }
+
+  handleChangeTitle(event){
+
+  }
+
+  handleChangeAuthor(event){
+
+  }
+
   //add methods
   render(){
 
     return (
-      <div></div>
+      <div>
+        <form>
 
-    )
+        </form>
+      </div>
+
+    );
   }
 
 
