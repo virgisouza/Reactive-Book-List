@@ -6,8 +6,8 @@ const BookFilterInput = ({title}) => {
   return (
       <div className="BookFilterInput">
         <form onSubmit="">
-          <input type="text" placeholder="title" onChange={}/>
-          <input type="text" placeholder="author" onChange={}/>
+           <input type="text" placeholder="title" onChange={filter}/>
+           <input type="text" placeholder="author" onChange={filter}/>
           <button type="submit">Filter</button>
         </form>
       </div>

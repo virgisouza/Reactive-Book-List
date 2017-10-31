@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-// import BookListItem from '../../components/BookListItem';
+import BookFilterInput from '../../components/BookFilterInput';
 import BookListAppTitle from '../../components/BookListAppTitle';
 import NewBookForm from '../NewBookForm';
 import { getBooksFromFakeXHR } from '../../lib/books.db';
+import { getBookByIdFromFakeXHR } from '../../lib/books.db';
 import { addBookToFakeXHR } from '../../lib/books.db';
 import BookList from '../BookList';
 
@@ -30,8 +31,14 @@ class App extends Component {
       books: [...this.state.books, newBook]
       });
     })
+  }
 
-
+  findBook(findBook) {
+    getBookByIdFromFakeXHR(findBook)
+    .then(foundBook => {
+      console.log('foundBook', foundBook)
+      return ;
+    })
   }
 
   componentWillMount(){
