@@ -1,11 +1,13 @@
 import React from 'react';
-import booksFromFakeDB from '../lib/books.db';
 
-const BookListItem = ({title}) => {
+const BookListItem = ({title, author}) => {
 
   return (
     <div className="BookListItem">
-      <div>Book List Item: { title }</div>
+      <div>
+        <div>Book Title: { title }</div>
+        <div>Book Author: { author }</div>
+      </div>
     </div>
   );
 }
